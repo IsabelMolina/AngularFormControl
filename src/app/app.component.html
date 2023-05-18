@@ -1,0 +1,146 @@
+<div class="container">
+
+  <h1>FormControl</h1>
+
+  <div class="mb-3">
+    <label for="name">Nombre</label>
+    <input type="text" name="name" class="form-control" [formControl]="name"> 
+  </div>
+
+  <div class="d-grid gap-2">
+    <button type="button" class="btn btn-primary" (click)="value()"> 
+      Obtener Valor
+    </button>
+    <button type="button" class="btn btn-primary" (click)="validator()">
+      Obtener Validadores
+    </button>
+    <button type="button" class="btn btn-primary" (click)="asyncValidator()">
+      Obtener Validador Asincrono 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="parent()"> 
+      Obtener Padre 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="status()">
+      Obtener Estado 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="valid()">
+      ¿Es Valido?
+    </button>
+    <button type="button" class="btn btn-primary" (click)="invalid()">
+      ¿Es inválido?
+    </button>
+    <button type="button" class="btn btn-primary" (click)="pending()">
+      ¿Esta Pendiente?
+    </button>
+    <button type="button" class="btn btn-primary" (click)="disabled()">
+      ¿Esta deshabilitado?
+    </button>
+    <button type="button" class="btn btn-primary" (click)="enabled()">
+      ¿Esta Habilitado?
+    </button>
+    <button type="button" class="btn btn-primary" (click)="pristine()">
+      ¿El Valor no ha Cambiado?
+    </button>
+    <button type="button" class="btn btn-primary" (click)="dirty()">
+      ¿Esta Sucio?
+    </button>
+    <button type="button" class="btn btn-primary" (click)="touched()">
+      ¿Esta Tocado?
+    </button>
+    <button type="button" class="btn btn-primary" (click)="untouched()">
+      ¿No Esta Tocado?
+    </button>
+    <button type="button" class="btn btn-primary" (click)="valueChanges()">
+      Obtener los Cambios de Valor
+    </button>
+    <button type="button" class="btn btn-primary" (click)="statusChanges()">
+      Obtener Cambios en el Estado 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="getUpdateOn()">
+      Obtener Estrategia de Actualizacion 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="getRoot()">
+      Obtener Padre 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="addRequiredValidator()">
+      Agregar Validador Requerido 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="addUniqueNameAsyncValidator()">
+      Agregar Validador Asincrono de Nombre Unico 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="setRequiredValidator()">
+      Asignar Validador Requerido 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="setUniqueNameAsyncValidator()">
+      Asignar Validador Asincrono de Nombre Unico 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="removeRequiredValidator()">
+      Remover Validador Requerido
+    </button>
+    <button type="button" class="btn btn-primary" (click)="removeUniqueNameAsyncValidator()">
+      Remover Validador de Nombre Unico 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="hasRequiredValidator()">
+      ¿Hay un Validador Requerido?
+    </button>
+    <button type="button" class="btn btn-primary" (click)="hasUniqueNameAsyncValidator()">
+      ¿Hay un Validador Asincrono Requerido?
+    </button>
+    <button type="button" class="btn btn-primary" (click)="clearValidators()">
+      Limpiar Validadores 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="clearAsyncValidators()">
+      Limpiar Validadores Asincronos 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="markAsTouched()">
+      Marcar Como Tocado
+    </button>
+    <button type="button" class="btn btn-primary" (click)="markAsUntouch()">
+      Marcar Como No Tocado
+    </button>
+    <button type="button" class="btn btn-primary" (click)="markAsDirty()">
+      Marcar Como Sucio
+    </button>
+    <button type="button" class="btn btn-primary" (click)="markAsPristine()">
+      Marcar Como Cambiado
+    </button>
+    <button type="button" class="btn btn-primary" (click)="markAsPending()">
+      Marcar Como Pendiente
+    </button>
+    <button type="button" class="btn btn-primary" (click)="disable()">
+      Deshabilitar
+    </button>
+    <button type="button" class="btn btn-primary" (click)="enable()">
+      Habilitar
+    </button>
+    <button type="button" class="btn btn-primary" (click)="setParent()">
+      Asignar Padre
+    </button>
+    <button type="button" class="btn btn-primary" (click)="setValue()">
+      Asignar Valor 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="patchValue()">
+      Parchar Valor 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="reset()">      
+      Reestablecer 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="getRawValue()">      
+      Obtener Valor en Crudo 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="updateValueAndValidity()">      
+      Actualizar Valor y Validación
+    </button>
+    <button type="button" class="btn btn-primary" (click)="setRequiredError()">
+      Asignar Error de Requerido 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="getRequiredError()">
+      Obtener Error de Requerido 
+    </button>
+    <button type="button" class="btn btn-primary" (click)="hasRequiredError()">
+      ¿Hay un Error de Requerido?
+    </button>
+  </div>  
+
+</div>
+
